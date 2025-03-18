@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "Lilita_One";
+    src: url("../tipografias/Lilita_One/LilitaOne-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Open_Sans";
+    src: url("../tipografias/Open_Sans/OpenSans-VariableFont_wdthwght.ttf");
+}
+
+*{
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+  --color: #333;
+  --azul: #5865f2;
+
+  --tipografia_gruesa: "Lilita_One", serif;
+  --tipografia_delgada: "Open_Sans", serif;
+}
+
+body{
+    font-family: var(--tipografia_delgada);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color);
+}
+
+.ancho {
+    max-width: 1200px;
+    margin: auto;
+    /* border: 1px red solid; */
+}
+
+.margen {
+    padding: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+header{
+    background-color: var(--azul);
+}
+.logo_discord{
+    /* border: 1px red solid; */
+    width: 124px;
+}
+.logo_discord img{
+    width: 100%;
+}
+.contenedor_menu ul{
+    /* border: 6px yellow solid; */
+    list-style: none;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor_menu ul li a{
+    /* border: 1px red solid; */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.contenedor_cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    /* border: 3px red solid; */
+    
+}
+.btn_blanco{
+    padding: 7px 16px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: white;
+    color: var(--negro);
+    border-radius: 40px;
+    display: inline-block;
+}
+
+/* section */
+.contenedor_slide{
+    background-color: var(--azul);
+    color: white;
+    /* border: 1px green solid; */
+    
+}
+.contenedor_slide_titulo{
+    font-size: 50px;
+    line-height: 48px;
+    font-weight: 500;
+    font-family: var(--tipografia_gruesa);
+    /* border: 1px gold solid; */
+}
+
+main{
+    /* border: 2px blue solid; */
+    max-width: 550px;
+   
+}
+.contenedor_slide_info{
+    margin: auto;
+    /* border: 4px white solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor_slide_info p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.contenedor_slide_info figure{
+    /* border: 2px black solid; */
+    max-width: 660px;
+    /* margin: 80px; */
+    width: auto;
+}
+.contenedor_slide_info figure img{
+    width: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.icono_menu{
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    display: none;
+}
+.contenedor_login{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+/* section2 */
+.contenedor-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedor1{
+    /* border: 1px orange solid; */
+    width: 45%;
+}
+
+.contenedor2{
+    /* border: 1px green solid; */
+    width: 55%;
+}
+
+.contenedor1 figure{
+    /* border: 2px black solid; */
+    max-width: 660px;
+    /* margin: 80px; */
+    width: 100%;
+}
+.contenedor1 figure img{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+/* section3 */
+.contenedorvideo{
+    /* border: 1px orange solid; */
+    width: 55%;
+}
+
+.contenedortexto{
+    /* border: 1px green solid; */
+    width: 45%;
+}
+
+/* .video{
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px red solid;
+}
+.contenedoryoutube{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.contenedoryoutube iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+/* footer */
+.contenedor_footer{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes_sociales i{
+    color: white;
+    font-size: 24px;
+    margin-right: 30px;
+}
+.final{
+    /* border: 6px pink solid; */
+    margin: 32px;
+}
